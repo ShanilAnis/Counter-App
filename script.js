@@ -6,15 +6,31 @@ const buttons = document.querySelector(".buttons");
 
 buttons.addEventListener('click', (e)=>{
     if (e.target.classList.contains('add')){
+         setColor()
          count.innerHTML++
     }
     else if (e.target.classList.contains('subtract')){
-         count.innerHTML--
+        setColor() 
+        count.innerHTML--
     }
     else if (e.target.classList.contains('reset')){
-         count.innerHTML = 0
+        setColor() 
+        count.innerHTML = 0
     }
 })
+
+function setColor(){
+    if(count.innerHTML > 0){
+        count.style.color = "yellow"
+    }
+    else if(count.innerHTML ==0){
+        count.style.color = 'white'
+    }
+
+    else{
+        count.style.color = 'red'
+    }
+}
 
 
 // addition.addEventListener("click", () => {
