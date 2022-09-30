@@ -1,15 +1,14 @@
 const subtract = document.querySelector(".subtract");
-const addition = document.querySelector(".addition");
+const addition = document.querySelector(".add");
 const reset = document.querySelector(".reset");
 const count = document.querySelector(".counter");
 const buttons = document.querySelector(".buttons");
 
-buttons.addEventListener('click', (e)=>{
-    if (e.target.classList.contains('addition')){
+// buttons.addEventListener('click', (e)=>{
+//     if (e.target.classList.contains('addition')){
 
-    }
-})
-
+//     }
+// })
 
 
 addition.addEventListener("click", () => {
